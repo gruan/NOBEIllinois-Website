@@ -363,7 +363,7 @@ input.search-form:hover {
 **************************/
 
 
-#main-slider {
+#landing-page {
   position: relative;
 }
 
@@ -372,20 +372,25 @@ input.search-form:hover {
   padding: 0;
 }
 
-#main-slider .carousel .carousel-content {
+#landing-page .carousel .carousel-content {
   margin-top: 150px;
 }
 
-#main-slider .carousel .landing-page-header{
+#landing-page .carousel .landing-page-header{
   margin-top: 140px;
   text-align: center;
 }
 
-#main-slider .carousel h2 {
+#landing-page .carousel h1 {
+  font-size: 4em;
+}
+
+#landing-page .carousel h2 {
+  font-size: 2.5em;
   color: #fff;
 }
 
-#main-slider .carousel .btn-slide {
+#landing-page .carousel .btn-slide {
   padding: 8px 20px;
   background: #c52d2f;
   color: #fff;
@@ -394,13 +399,13 @@ input.search-form:hover {
   display: inline-block;
 }
 
-#main-slider .carousel .slider-img{
+#landing-page .carousel .slider-img{
   text-align: right;
   position: absolute;
 }
 
 
-#main-slider .carousel .item {
+#landing-page .carousel .item {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -417,12 +422,12 @@ input.search-form:hover {
   transition: opacity ease-in-out 500ms;
 }
 
-#main-slider .carousel .item:first-child {
+#landing-page .carousel .item:first-child {
   top: auto;
   position: relative;
 }
 
-#main-slider .carousel .item.active {
+#landing-page .carousel .item.active {
   opacity: 1;
   -webkit-transition: opacity ease-in-out 500ms;
   -moz-transition: opacity ease-in-out 500ms;
@@ -431,8 +436,8 @@ input.search-form:hover {
   z-index: 1;
 }
 
-#main-slider .prev,
-#main-slider .next {
+#landing-page .prev,
+#landing-page .next {
   position: absolute;
   top: 50%;
   background-color: #c52d2f;
@@ -448,20 +453,20 @@ input.search-form:hover {
   z-index: 5;
 }
 
-#main-slider .prev:hover,
-#main-slider .next:hover {
+#landing-page .prev:hover,
+#landing-page .next:hover {
   background-color: #000;
 }
 
-#main-slider .prev {
+#landing-page .prev {
   left: 10px;
 }
 
-#main-slider .next {
+#landing-page .next {
   right: 10px;
 }
 
-#main-slider .carousel-indicators li {
+#landing-page .carousel-indicators li {
   width: 20px;
   height: 20px;
   background-color: #fff;
@@ -469,7 +474,7 @@ input.search-form:hover {
   position: relative;
 }
 
-#main-slider .carousel-indicators li:after {
+#landing-page .carousel-indicators li:after {
   position: absolute;
   content: "";
   width: 24px;
@@ -481,7 +486,7 @@ input.search-form:hover {
   top: -3px;
 }
 
-#main-slider .carousel-indicators .active{
+#landing-page .carousel-indicators .active{
   width: 20px;
   height: 20px;
   background-color: #c52d2f;
@@ -490,7 +495,7 @@ input.search-form:hover {
    position: relative;
 }
 
-#main-slider .carousel-indicators .active:after {
+#landing-page .carousel-indicators .active:after {
   position: absolute;
   content: "";
   width: 24px;
@@ -502,7 +507,7 @@ input.search-form:hover {
   top: -3px;
 }
 
-#main-slider .active .animation.animated-item-1 {
+#landing-page .active .animation.animated-item-1 {
   -webkit-animation: fadeInUp 300ms linear 300ms both;
   -moz-animation: fadeInUp 300ms linear 300ms both;
   -o-animation: fadeInUp 300ms linear 300ms both;
@@ -510,7 +515,7 @@ input.search-form:hover {
   animation: fadeInUp 300ms linear 300ms both;
 }
 
-#main-slider .active .animation.animated-item-2 {
+#landing-page .active .animation.animated-item-2 {
   -webkit-animation: fadeInUp 300ms linear 600ms both;
   -moz-animation: fadeInUp 300ms linear 600ms both;
   -o-animation: fadeInUp 300ms linear 600ms both;
@@ -518,7 +523,7 @@ input.search-form:hover {
   animation: fadeInUp 300ms linear 600ms both;
 }
 
-#main-slider .active .animation.animated-item-3 {
+#landing-page .active .animation.animated-item-3 {
   -webkit-animation: fadeInUp 300ms linear 900ms both;
   -moz-animation: fadeInUp 300ms linear 900ms both;
   -o-animation: fadeInUp 300ms linear 900ms both;
@@ -526,7 +531,7 @@ input.search-form:hover {
   animation: fadeInUp 300ms linear 900ms both;
 }
 
-#main-slider .active .animation.animated-item-4 {
+#landing-page .active .animation.animated-item-4 {
   -webkit-animation: fadeInUp 300ms linear 1200ms both;
   -moz-animation: fadeInUp 300ms linear 1200ms both;
   -o-animation: fadeInUp 300ms linear 1200ms both;
