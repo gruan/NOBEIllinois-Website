@@ -116,14 +116,6 @@
     margin-left: 0;
   }
 
-  #main-slider .carousel h1 {
-    font-size: 4em;
-  }
-
-  #main-slider .carousel h2 {
-    font-size: 2.5em;
-  }
-
   .tab-wrap .media .parrent.pull-left,
   .media.accordion-inner .pull-left{
     clear: both;
@@ -203,11 +195,11 @@
     padding-bottom: 0;
   }
 
-  #main-slider .carousel h1 {
+  #landing-page .carousel h1 {
     font-size: 25px;
   }
 
-  #main-slider .carousel h2 {
+  #landing-page .carousel h2 {
     font-size: 16px;
   }
 
