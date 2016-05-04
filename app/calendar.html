@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Services | Corlate</title>
+    <title>Calendar | Corlate</title>
 
     <!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -72,9 +72,9 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about-us.html">About Us</a></li>
-                        <li class="active"><a href="services.html">Services</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="calendar.html">Calendar</a></li>
+                        <li class="active"><a href="calendar.html">Calendar</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
@@ -99,6 +99,8 @@
                 <h2>Our Services</h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
+
+            <div data-tockify-component="calendar" data-tockify-calendar="nobe.events"></div>
 
             <div class="row">
                 <div class="features">
@@ -284,5 +286,7 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+
+    <script id="tockify-embed-script" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
 </body>
 </html>
