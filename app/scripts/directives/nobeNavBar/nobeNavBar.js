@@ -31,7 +31,18 @@
     return directive;
 
     function link(scope) {
+      scope.facebook = 'https://www.facebook.com/groups/nobeillinois/';
+      scope.twitter = 'https://twitter.com/nobeillinois?lang=en';
+      scope.linkedin = 'https://www.linkedin.com/';
 
+      // Defines highlighted tab in the navigation bar
+      scope.activePage = {
+        home      : {active: false},
+        about     : {active: false},
+        services  : {active: false},
+        portfolio : {active: false},
+        events    : {active: false}
+      };
     }
   }
 })();
