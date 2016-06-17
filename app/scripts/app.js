@@ -10,6 +10,7 @@
   angular
     .module('nobe', ['ngRoute'])  // Set up app dependencies
     .config(function($routeProvider) {
+      // Define Routes
       $routeProvider
         .when('/', {
           templateUrl: 'views/home.html',
