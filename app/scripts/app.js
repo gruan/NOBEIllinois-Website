@@ -16,6 +16,10 @@
           templateUrl: 'views/home.html',
           controller: 'HomeCtrl'
         })
+        .when('/about', {
+          templateUrl: 'views/about.html',
+          controller: 'AboutCtrl'
+        })
         .when('/404', {
           templateUrl: '404.html',
         })
