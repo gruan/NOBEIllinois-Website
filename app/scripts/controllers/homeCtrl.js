@@ -10,9 +10,9 @@
     angular.module('nobe')
       .controller('HomeCtrl', homeCtrl);
 
-      homeCtrl.$inject = ['$scope'];
+      homeCtrl.$inject = ['$scope', '$rootScope'];
 
-      function homeCtrl($scope) {
-        //new WOW().init();
+      function homeCtrl($scope, $rootScope) {
+        // Functionality goes here
       }
 })();

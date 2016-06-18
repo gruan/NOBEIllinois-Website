@@ -13,6 +13,6 @@
       aboutCtrl.$inject = ['$scope'];
 
       function aboutCtrl($scope) {
-        //new WOW().init();
+        // Functionality goes here.
       }
 })();
