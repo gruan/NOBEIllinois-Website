@@ -13,6 +13,6 @@
       homeCtrl.$inject = ['$scope'];
 
       function homeCtrl($scope) {
-
+        //new WOW().init();
       }
 })();
