@@ -63,11 +63,4 @@ jQuery(function($) {
 			scrollTop: $('body').offset().top
 		}, 500);
 	});
-
-/* Needs to be added
-	//Pretty Photo
-	$('a[rel^='prettyPhoto']').prettyPhoto({
-		social_tools: false
-	});
-	*/
 });
