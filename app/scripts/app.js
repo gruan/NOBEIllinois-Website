@@ -24,7 +24,7 @@
           templateUrl: '404.html',
         })
         .when('', {
-          redirectTo: '/404'
+          redirectTo: '/'
         })
         .otherwise({
           redirectTo: '/404'
