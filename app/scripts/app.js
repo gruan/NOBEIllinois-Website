@@ -18,13 +18,12 @@
         })
         .when('/about', {
           templateUrl: 'views/about.html',
-          controller: 'AboutCtrl'
+        })
+        .when('/services', {
+          templateUrl: 'views/services.html'
         })
         .when('/404', {
           templateUrl: '404.html',
-        })
-        .when('', {
-          redirectTo: '/'
         })
         .otherwise({
           redirectTo: '/404'
