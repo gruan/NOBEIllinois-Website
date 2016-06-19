@@ -23,15 +23,15 @@
         .when('/404', {
           templateUrl: '404.html',
         })
+        .when('', {
+          redirectTo: '/404'
+        })
         .otherwise({
           redirectTo: '/404'
         });
     })
     .run(['$rootScope', function($rootScope) {
-      let wow = new WOW({live : true}).init();
-
-      $rootScope.$on('$viewContentLoaded', function() {
-        wow.start();
-      });
+      let wow = new WOW({live : true});
+      wow.init();
     }]);
 })();
