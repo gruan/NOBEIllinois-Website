@@ -539,6 +539,11 @@ input.search-form:hover {
   animation: fadeInUp 300ms linear 1200ms both;
 }
 
+#mission {
+  background: #f2f2f2;
+  padding-bottom: 40px;
+}
+
 #feature {
   background: #f2f2f2;
   padding-bottom: 40px;
@@ -588,6 +593,70 @@ input.search-form:hover {
   box-shadow: inset 0 0 0 5px #c52d2f;
   -webkit-box-shadow: inset 0 0 0 5px #c52d2f;
   border: 3px solid #c52d2f;
+}
+
+#committees .col-xs-12.col-sm-4.col-md-3{
+  padding: 0;
+}
+
+#committeees{
+    padding-bottom: 70px;
+}
+
+.committees-wrap {
+  position: relative;
+}
+
+.committees-wrap img{
+  width: 100%;
+}
+
+.committees-wrap .committees-inner{
+  top: 0;
+  background: transparent;
+  opacity: .8;
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.committees-wrap .committees-inner h3{
+  margin: 10px 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.committees-wrap .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 0;
+  background: #c52d2f;
+  color: #fff;
+  vertical-align: middle;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  padding: 30px;
+}
+
+.committees-wrap .overlay .preview {
+  bottom: 0;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 0;
+  background: transparent;
+  text-align: center;
+  color: #fff;
+}
+
+.committees-wrap:hover .overlay {
+  opacity: 1;
 }
 
 #recent-works .col-xs-12.col-sm-4.col-md-3{
