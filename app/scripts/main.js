@@ -18,9 +18,6 @@ jQuery(function($) {
 	 	$(this).closest('.panel-heading').toggleClass('active');
 	});
 
-	//Initiate WOW JS
-	new WOW().init();
-
 	// portfolio filter
 	$(window).load(function(){
 		var $portfolio_selectors = $('.portfolio-filter >li>a');
