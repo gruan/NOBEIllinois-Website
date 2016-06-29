@@ -22,11 +22,11 @@
         .when('/services', {
           templateUrl: 'views/services.html'
         })
-        .when('/portfolio', {
-          templateUrl: 'views/portfolio.html'
-        })
         .when('/events', {
           templateUrl: 'views/events.html'
+        })
+        .when('/contact', {
+          templateUrl: 'views/contact.html'
         })
         .when('/404', {
           templateUrl: '404.html',
