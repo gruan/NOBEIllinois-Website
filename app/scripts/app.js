@@ -13,8 +13,8 @@
       // Define Routes
       $routeProvider
         .when('/', {
-          templateUrl: 'views/home.html',
-          controller: 'HomeCtrl'
+          controller: 'HomeCtrl',
+          templateUrl: 'views/home.html'
         })
         .when('/about', {
           templateUrl: 'views/about.html',
@@ -26,6 +26,7 @@
           templateUrl: 'views/events.html'
         })
         .when('/contact', {
+          controller: 'ContactCtrl',
           templateUrl: 'views/contact.html'
         })
         .when('/404', {
