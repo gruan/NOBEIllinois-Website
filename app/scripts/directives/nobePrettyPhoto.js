@@ -9,11 +9,11 @@
   'use strict';
 
   angular.module('nobe')
-    .directive('prettyPhoto', prettyPhoto);
+    .directive('nobePrettyPhoto', nobePrettyPhoto);
 
   // navBar.$inject = ['$scope'];
 
-  function prettyPhoto() {
+  function nobePrettyPhoto() {
     return {
       link: link,
       restrict: 'A'
