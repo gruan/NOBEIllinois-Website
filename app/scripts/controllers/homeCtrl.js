@@ -10,9 +10,9 @@
     angular.module('nobe')
       .controller('HomeCtrl', homeCtrl);
 
-      homeCtrl.$inject = ['$scope', '$rootScope'];
+    homeCtrl.$inject = ['$scope', '$rootScope'];
 
-      function homeCtrl($scope, $rootScope) {
-        // Functionality goes here
-      }
+    function homeCtrl($scope, $rootScope) {
+      // Functionality goes here
+    }
 })();
