@@ -40,8 +40,8 @@
         home      : {active: false},
         about     : {active: false},
         services  : {active: false},
-        portfolio : {active: false},
-        events    : {active: false}
+        events    : {active: false},
+        contact   : {active: false}
       };
     }
   }
