@@ -21,11 +21,11 @@
 
     directive = {
       link: link,
-      templateUrl: 'scripts/directives/nobeFooter/nobeFooter.html',
       restrict: 'E',
       scope: {
 
-      }
+      },
+      templateUrl: 'scripts/directives/nobeFooter/nobeFooter.html'
     };
 
     return directive;
