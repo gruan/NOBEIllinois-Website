@@ -16,11 +16,11 @@
       // ==================
       // Text
       // ==================
-      $scope.landingPageText = {
+      $scope.landingPageSection = {
         title: 'National Organization of Business and Engineering',
         description: 'Illinois Chapter'
       };
-      $scope.missionText = {
+      $scope.missionSection = {
         title: 'Our Mission',
         statement: 'Our mission is to bring together individuals at corporate ' +
                    'and academic institutions interested in both business and ' +
@@ -32,7 +32,7 @@
                    'continually build resources to help these individuals meet ' +
                    'the constantly evolving demands they will face in today’s business world.'
       };
-      $scope.committeesText = {
+      $scope.committeeSection = {
         title: 'Committees',
         description: 'A variety of committees that promote direct member involvement ' +
                     'with the organization and community.',
@@ -100,7 +100,7 @@
           return 'col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6';
         }
 
-          return 'col-sm-6 col-md-5 col-md-offset-1';
+        return 'col-sm-6 col-md-5 col-md-offset-1';
       };
     } // function homeCtrl
 })();

@@ -1,5 +1,5 @@
 <div id="home-page" class="homepage">
-    <section id="landing-page" class="no-margin">
+    <section id="landing-page-section" class="no-margin">
         <div class="carousel">
             <div class="carousel-inner">
 
@@ -8,8 +8,8 @@
                         <div class="row landing-page-header">
                             <div class="col-sm-12">
                                 <div class="carousel-content">
-                                    <h1 class="animation animated-item-1">{{landingPageText.title}}</h1>
-                                    <h2 class="animation animated-item-2">{{landingPageText.description}}<h2>
+                                    <h1 class="animation animated-item-1">{{landingPageSection.title}}</h1>
+                                    <h2 class="animation animated-item-2">{{landingPageSection.description}}<h2>
                                 </div>
                             </div>
                         </div>
@@ -20,26 +20,26 @@
         </div><!--/.carousel-->
     </section><!--/#landing-page-->
 
-    <section id="mission">
+    <section id="mission-section">
         <div class="container">
             <div class="center wow fadeInDown">
-                <h2>{{missionText.title}}</h2>
-                <p class="lead">{{missionText.statement}}</p>
+                <h2>{{missionSection.title}}</h2>
+                <p class="lead">{{missionSection.statement}}</p>
             </div>
         </div>
     </section>
 
-    <section id="committees">
+    <section id="committee-section">
         <div class="container">
             <div class="center wow fadeInDown">
-                <h2>{{committeesText.title}}</h2>
-                <p class="lead">{{committeesText.description}}</p>
+                <h2>{{committeeSection.title}}</h2>
+                <p class="lead">{{committeeSection.description}}</p>
             </div>
 
             <div class="row">
-                <div ng-repeat="committee in committeesText.committees">
+                <div ng-repeat="committee in committeeSection.committees">
                     <div ng-class="getCommitteeContainerClass($last, $even)">
-                        <div class="feature-wrap">
+                        <div class="circular-icon">
                             <i ng-class="committee.iconClass"></i>
                             <h2>{{committee.title}}</h2>
                             <h3>{{committee.description}}</h3>
@@ -60,7 +60,7 @@
             <div class="row">
                 <div class="features">
                     <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
+                        <div class="circular-icon">
                             <i class="fa fa-bullhorn"></i>
                             <h2>Fresh and Clean</h2>
                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
@@ -68,7 +68,7 @@
                     </div><!--/.col-md-4-->
 
                     <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
+                        <div class="circular-icon">
                             <i class="fa fa-comments"></i>
                             <h2>Retina ready</h2>
                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
@@ -76,7 +76,7 @@
                     </div><!--/.col-md-4-->
 
                     <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
+                        <div class="circular-icon">
                             <i class="fa fa-cloud-download"></i>
                             <h2>Easy to customize</h2>
                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
@@ -84,7 +84,7 @@
                     </div><!--/.col-md-4-->
 
                     <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
+                        <div class="circular-icon">
                             <i class="fa fa-leaf"></i>
                             <h2>Adipisicing elit</h2>
                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
@@ -92,7 +92,7 @@
                     </div><!--/.col-md-4-->
 
                     <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
+                        <div class="circular-icon">
                             <i class="fa fa-cogs"></i>
                             <h2>Sed do eiusmod</h2>
                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
@@ -100,7 +100,7 @@
                     </div><!--/.col-md-4-->
 
                     <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
+                        <div class="circular-icon">
                             <i class="fa fa-heart"></i>
                             <h2>Labore et dolore</h2>
                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>

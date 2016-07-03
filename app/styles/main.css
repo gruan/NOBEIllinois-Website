@@ -363,7 +363,7 @@ input.search-form:hover {
 **************************/
 
 
-#landing-page {
+#landing-page-section {
   position: relative;
 }
 
@@ -372,25 +372,25 @@ input.search-form:hover {
   padding: 0;
 }
 
-#landing-page .carousel .carousel-content {
+#landing-page-section .carousel .carousel-content {
   margin-top: 150px;
 }
 
-#landing-page .carousel .landing-page-header{
+#landing-page-section .carousel .landing-page-header{
   margin-top: 140px;
   text-align: center;
 }
 
-#landing-page .carousel h1 {
+#landing-page-section .carousel h1 {
   font-size: 3em;
 }
 
-#landing-page .carousel h2 {
+#landing-page-section .carousel h2 {
   font-size: 2.5em;
   color: #fff;
 }
 
-#landing-page .carousel .btn-slide {
+#landing-page-section .carousel .btn-slide {
   padding: 8px 20px;
   background: #de8033;
   color: #fff;
@@ -399,13 +399,13 @@ input.search-form:hover {
   display: inline-block;
 }
 
-#landing-page .carousel .slider-img{
+#landing-page-section .carousel .slider-img{
   text-align: right;
   position: absolute;
 }
 
 
-#landing-page .carousel .item {
+#landing-page-section .carousel .item {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -422,12 +422,12 @@ input.search-form:hover {
   transition: opacity ease-in-out 500ms;
 }
 
-#landing-page .carousel .item:first-child {
+#landing-page-section .carousel .item:first-child {
   top: auto;
   position: relative;
 }
 
-#landing-page .carousel .item.active {
+#landing-page-section .carousel .item.active {
   opacity: 1;
   -webkit-transition: opacity ease-in-out 500ms;
   -moz-transition: opacity ease-in-out 500ms;
@@ -436,8 +436,8 @@ input.search-form:hover {
   z-index: 1;
 }
 
-#landing-page .prev,
-#landing-page .next {
+#landing-page-section .prev,
+#landing-page-section .next {
   position: absolute;
   top: 50%;
   background-color: #de8033;
@@ -453,20 +453,20 @@ input.search-form:hover {
   z-index: 5;
 }
 
-#landing-page .prev:hover,
-#landing-page .next:hover {
+#landing-page-section .prev:hover,
+#landing-page-section .next:hover {
   background-color: #000;
 }
 
-#landing-page .prev {
+#landing-page-section .prev {
   left: 10px;
 }
 
-#landing-page .next {
+#landing-page-section .next {
   right: 10px;
 }
 
-#landing-page .carousel-indicators li {
+#landing-page-section .carousel-indicators li {
   width: 20px;
   height: 20px;
   background-color: #fff;
@@ -474,7 +474,7 @@ input.search-form:hover {
   position: relative;
 }
 
-#landing-page .carousel-indicators li:after {
+#landing-page-section .carousel-indicators li:after {
   position: absolute;
   content: "";
   width: 24px;
@@ -486,7 +486,7 @@ input.search-form:hover {
   top: -3px;
 }
 
-#landing-page .carousel-indicators .active{
+#landing-page-section .carousel-indicators .active{
   width: 20px;
   height: 20px;
   background-color: #de8033;
@@ -495,7 +495,7 @@ input.search-form:hover {
    position: relative;
 }
 
-#landing-page .carousel-indicators .active:after {
+#landing-page-section .carousel-indicators .active:after {
   position: absolute;
   content: "";
   width: 24px;
@@ -507,7 +507,7 @@ input.search-form:hover {
   top: -3px;
 }
 
-#landing-page .active .animation.animated-item-1 {
+#landing-page-section .active .animation.animated-item-1 {
   -webkit-animation: fadeInUp 300ms linear 300ms both;
   -moz-animation: fadeInUp 300ms linear 300ms both;
   -o-animation: fadeInUp 300ms linear 300ms both;
@@ -515,7 +515,7 @@ input.search-form:hover {
   animation: fadeInUp 300ms linear 300ms both;
 }
 
-#landing-page .active .animation.animated-item-2 {
+#landing-page-section .active .animation.animated-item-2 {
   -webkit-animation: fadeInUp 300ms linear 600ms both;
   -moz-animation: fadeInUp 300ms linear 600ms both;
   -o-animation: fadeInUp 300ms linear 600ms both;
@@ -523,7 +523,7 @@ input.search-form:hover {
   animation: fadeInUp 300ms linear 600ms both;
 }
 
-#landing-page .active .animation.animated-item-3 {
+#landing-page-section .active .animation.animated-item-3 {
   -webkit-animation: fadeInUp 300ms linear 900ms both;
   -moz-animation: fadeInUp 300ms linear 900ms both;
   -o-animation: fadeInUp 300ms linear 900ms both;
@@ -531,7 +531,7 @@ input.search-form:hover {
   animation: fadeInUp 300ms linear 900ms both;
 }
 
-#landing-page .active .animation.animated-item-4 {
+#landing-page-section .active .animation.animated-item-4 {
   -webkit-animation: fadeInUp 300ms linear 1200ms both;
   -moz-animation: fadeInUp 300ms linear 1200ms both;
   -o-animation: fadeInUp 300ms linear 1200ms both;
@@ -539,7 +539,7 @@ input.search-form:hover {
   animation: fadeInUp 300ms linear 1200ms both;
 }
 
-#mission {
+#mission-section {
   background: #f2f2f2;
   padding-bottom: 40px;
 }
@@ -553,20 +553,20 @@ input.search-form:hover {
   padding: 0;
 }
 
-.feature-wrap {
+.circular-icon {
   margin-bottom: 35px;
   overflow: hidden;
 }
 
-.feature-wrap h2{
+.circular-icon h2{
   margin-top: 10px;
 }
 
-.feature-wrap .pull-left {
+.circular-icon .pull-left {
   margin-right: 25px;
 }
 
-.feature-wrap i{
+.circular-icon i{
   font-size: 48px;
   height: 110px;
   width: 110px;
@@ -587,7 +587,7 @@ input.search-form:hover {
   margin-right: 25px;
 }
 
-.feature-wrap i:hover {
+.circular-icon i:hover {
   background: #de8033;
   color: #fff;
   box-shadow: inset 0 0 0 5px #de8033;
