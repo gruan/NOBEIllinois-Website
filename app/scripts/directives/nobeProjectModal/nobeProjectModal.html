@@ -1,0 +1,41 @@
+<!-- Preview -->
+<div class="portfolio-item">
+    <a href="" class="portfolio-link" data-toggle="modal" ng-click="openModal()">
+        <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+            </div>
+        </div>
+        <img src="images/portfolio/full/item1.png" class="img-responsive" alt="">
+    </a>
+    <div class="portfolio-caption">
+        <h4>{{team.name}}</h4>
+        <p class="text-muted">{{team.shortDescription}}</p>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="portfolio-modal modal fade-project-modal" ng-class="{'in':isModalOpen()}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" ng-click="closeModal()">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2>{{team.name}}</h2>
+                        <p class="item-intro text-muted">{{team.shortDescription}}</p>
+                        <img class="img-responsive img-centered" src="images/portfolio/full/item1.png" alt="">
+                        <p>{{team.description}}</p>
+                        <button type="button" class="btn btn-primary" ng-click="closeModal()"><i class="fa fa-times"></i> Close Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

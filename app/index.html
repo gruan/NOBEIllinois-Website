@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="nobe">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,8 @@
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/responsive.css" rel="stylesheet">
 
+    <link href="scripts/directives/nobeProjectModal/nobeProjectModal.css" rel="stylesheet">
+
     <!-- Icons -->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
@@ -31,9 +33,9 @@
     <![endif]-->
 </head><!--/head-->
 
-<body ng-app="nobe">
+<body ng-controller="BodyCtrl" ng-class="{'modal-open':isModalOpen()}">
     <nobe-nav-bar></nobe-nav-bar>
-    <div ng-view></div>
+        <div ng-view></div>
     <nobe-footer></nobe-footer>
 
     <!-- SPELLS -->
@@ -42,8 +44,6 @@
     <script src="libraries/prettyPhoto/jquery.prettyPhoto.js"></script>
     <script src="libraries/wow/wow.min.js"></script>
 
-    <!-- FIXME: For potential faster loads, use cloadflare -->
-    <script src="libraries/bootstrap/bootstrap.min.js"></script>
 
     <!-- FIXME: For potential faster loads, use cloadflare -->
     <script src="libraries/angular/angular.min.1.4.4.js"></script>
@@ -57,11 +57,14 @@
     <script src="scripts/main.js"></script>
 
     <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/bodyCtrl.js"></script>
     <script src="scripts/controllers/contactCtrl.js"></script>
     <script src="scripts/controllers/homeCtrl.js"></script>
     <script src="scripts/directives/nobeFooter/nobeFooter.js"></script>
+    <script src="scripts/directives/nobeProjectModal/nobeProjectModal.js"></script>
     <script src="scripts/directives/nobeNavBar/nobeNavBar.js"></script>
     <script src="scripts/directives/nobePrettyPhoto.js"></script>
+    <script src="scripts/services/nobeWindowData.js"></script>
 
 </body><!--/body-->
 </html>

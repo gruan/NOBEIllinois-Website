@@ -34,73 +34,140 @@
       };
       $scope.committeeSection = {
         title: 'Committees',
-        description: 'A variety of committees that promote direct member involvement ' +
-                    'with the organization and community.',
+        description: 'Join a variety of committees that promote direct member involvement ' +
+                    'with the organization and local community.',
         committees: [
           {
-            title: 'External',
+            name: 'External',
             description: 'Seek and establish company relationships.',
             iconClass: 'fa fa-search'
           },
           {
-            title: 'Internal',
+            name: 'Internal',
             description: 'Create mentorship programs between new and old members.',
             iconClass: 'fa fa-users'
           },
           {
-            title: 'Tech',
+            name: 'Tech',
             description: 'Develop the website, newsletter, resume book, and alumni database.',
             iconClass: 'fa fa-laptop'
           },
           {
-            title: 'Finance',
+            name: 'Finance',
             description: 'Deliver interactive finance presentations to our members.',
             iconClass: 'fa fa-pie-chart'
           },
           {
-            title: 'Social',
-            description: 'Organize member get togethers like bar crawls and barbecues.',
+            name: 'Social',
+            description: 'Organize social events like bar crawls and barbecues.',
             iconClass: 'fa fa-beer'
           },
           {
-            title: 'Fundraising',
-            description: 'Plan and execute fundraising events',
+            name: 'Fundraising',
+            description: 'Plan and execute fundraising events.',
             iconClass: 'fa fa-usd'
           },
           {
-            title: 'Professional Development',
+            name: 'Career Development',
             description: 'Connect members with professionals.',
             iconClass: 'fa fa-industry'
           },
           {
-            title: 'Case Competition',
+            name: 'Case Competition',
             description: 'Create and host NOBE\'s annual case competition.',
             iconClass: 'fa fa-lightbulb-o'
           },
           {
-            title: 'Marketing',
+            name: 'Marketing',
             description: 'Promote events through social media and our newsletter.',
             iconClass: 'fa fa-newspaper-o'
           },
           {
-            title: 'Outreach',
+            name: 'Outreach',
             description: 'Build our EOH project and connect NOBE with community members.',
             iconClass: 'fa fa-tree'
           },
           {
-            title: 'Junior Board',
+            name: 'Junior Board',
             description: 'Form a new project under the mentorship of an executive member.',
             iconClass: 'fa fa-child'
           }
         ]
       };
 
-      $scope.getCommitteeContainerClass = function(isLastElement, isIndexEven) {
+      $scope.teamSection = {
+        title: 'Teams',
+        description: 'Develop skills and connections with other NOBE members ' +
+                     'by getting involved on teams.',
+        teams: [
+          {
+            name: 'Product Development',
+            shortDescription: 'Brainstorm and create.',
+            image: 'images/services/services1.png',
+            imageAlt: '',
+            description: 'Use this area to describe your project. Lorem ipsum ' +
+                         'dolor sit amet, consectetur adipisicing elit. Est ' +
+                         'blanditiis dolorem culpa incidunt minus dignissimos ' +
+                         'deserunt repellat aperiam quasi sunt officia expedita ' +
+                         'beatae cupiditate, maiores repudiandae, nostrum, ' +
+                         'reiciendis facere nemo!'
+          },
+          {
+            name: 'Case Competition',
+            shortDescription: 'Compete in competitions.',
+            image: 'images/services/services1.png',
+            imageAlt: '',
+            description: 'Use this area to describe your project. Lorem ipsum ' +
+                         'dolor sit amet, consectetur adipisicing elit. Est ' +
+                         'blanditiis dolorem culpa incidunt minus dignissimos ' +
+                         'deserunt repellat aperiam quasi sunt officia expedita ' +
+                         'beatae cupiditate, maiores repudiandae, nostrum, ' +
+                         'reiciendis facere nemo!'
+          }
+        ]
+      };
+
+      // ==================
+      // Functions
+      // ==================
+
+      function getCommitteeContainerClass(isLastElement, isIndexEven) {
         if (isLastElement && isIndexEven) {
           return 'col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6';
         }
 
         return 'col-sm-6 col-md-5 col-md-offset-1';
-      };
+      }
+
+      function getTeamContainerClass(isLastElement, isIndexOdd) {
+        let parity = $scope.teamSection.teams.length % 3;
+
+        switch (parity) {
+        case 0:
+        // Do nothing.
+          break;
+        case 1:
+          if (isLastElement) {
+            return 'col-md-offset-4 col-sm-offset-3';
+          }
+          break;
+        case 2:
+          if (isIndexOdd) {
+            return 'col-md-offset-2';
+          } else {
+            return 'col-md-offset-1';
+          }
+          break;
+        default:
+          return '';
+        }
+      }
+
+      // ==================
+      // Public
+      // ==================
+
+      $scope.getCommitteeContainerClass = getCommitteeContainerClass;
+      $scope.getTeamContainerClass = getTeamContainerClass;
     } // function homeCtrl
 })();
