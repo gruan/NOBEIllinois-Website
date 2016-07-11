@@ -557,15 +557,6 @@ input.search-form:hover {
   padding-bottom: 70px;
 }
 
-#feature {
-  background: #f2f2f2;
-  padding-bottom: 40px;
-}
-
-.features{
-  padding: 0;
-}
-
 .circular-icon {
   margin-bottom: 35px;
   overflow: hidden;
