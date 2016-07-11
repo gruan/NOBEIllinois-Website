@@ -249,6 +249,10 @@ ul.social-share li a:hover {
   margin:0;
 }
 
+.navbar-brand img {
+  max-width: 150px;
+}
+
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
