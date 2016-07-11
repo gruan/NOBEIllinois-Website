@@ -3,7 +3,7 @@
         <div class="carousel">
             <div class="carousel-inner">
 
-                <div class="item active" style="background-image: url(images/UIUC_Quad.jpg)">
+                <div class="item active landing-page-background">
                     <div class="container">
                         <div class="row landing-page-header">
                             <div class="col-sm-12">
@@ -59,7 +59,7 @@
 
             <div class="row">
                 <div ng-repeat="team in teamSection.teams">
-                    <div class="col-md-4 col-sm-6" ng-class="getTeamContainerClass($last, $odd)">
+                    <div class="col-sm-6 col-md-4" ng-class="getTeamContainerClass($last, $odd)">
                         <nobe-project-modal team="team">
                         </nobe-project-modal>
                     </div>
@@ -68,23 +68,20 @@
         </div>
     </section><!--/#team-section-->
 
-    <section id="partner">
+    <aside id="sponsor-aside">
         <div class="container">
             <div class="center wow fadeInDown">
-                <h2>Our Partners</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h2>{{sponsorAside.title}}</h2>
             </div>
 
-            <div class="partners">
-                <ul>
-                    <li> <a href="#/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="images/partners/partner1.png"></a></li>
-                    <li> <a href="#/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="images/partners/partner2.png"></a></li>
-                    <li> <a href="#/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="images/partners/partner3.png"></a></li>
-                    <li> <a href="#/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="images/partners/partner4.png"></a></li>
-                    <li> <a href="#/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="images/partners/partner5.png"></a></li>
-                </ul>
+            <div class="row">
+                <div ng-repeat="sponsor in sponsorAside.sponsors">
+                    <div class="col-xs-6 col-md-4 col-xs-offset-3 col-md-offset-4">
+                        <img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="{{getSponsorAnimationDelay($index)}}" ng-src="images/partners/{{sponsor}}_logo.png">
+                    </div>
+                </div>
             </div>
         </div><!--/.container-->
-    </section><!--/#partner-->
-    
+    </aside><!--/#partner-->
+
 </div><!--/#home-page-->

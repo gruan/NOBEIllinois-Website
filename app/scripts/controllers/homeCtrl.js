@@ -127,6 +127,13 @@
         ]
       };
 
+      $scope.sponsorAside = {
+        title: 'Our Sponsors',
+        sponsors: [
+          'akuna_capital'
+        ]
+      };
+
       // ==================
       // Functions
       // ==================
@@ -144,7 +151,7 @@
 
         switch (parity) {
         case 0:
-        // Do nothing.
+          // Do nothing.
           break;
         case 1:
           if (isLastElement) {
@@ -152,15 +159,18 @@
           }
           break;
         case 2:
-          if (isIndexOdd) {
+          if (!isIndexOdd) {
             return 'col-md-offset-2';
-          } else {
-            return 'col-md-offset-1';
           }
           break;
         default:
           return '';
         }
+      }
+
+      function getSponsorAnimationDelay(index) {
+        let delay = `${300 * (index + 1)}ms`;
+        return delay;
       }
 
       // ==================
@@ -169,5 +179,6 @@
 
       $scope.getCommitteeContainerClass = getCommitteeContainerClass;
       $scope.getTeamContainerClass = getTeamContainerClass;
+      $scope.getSponsorAnimationDelay = getSponsorAnimationDelay;
     } // function homeCtrl
 })();
