@@ -36,7 +36,7 @@
           redirectTo: '/404'
         });
     })
-    .run(['$rootScope', function($rootScope) {
+    .run([function() {
       let wow = new WOW({live : true});
       wow.init();
     }]);
