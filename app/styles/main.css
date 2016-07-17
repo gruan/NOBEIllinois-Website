@@ -7,6 +7,10 @@
 * - Light. #f2f2f2
 * - Lightest. #fff
 * - NOBE Orange. #de8033
+* - Dark Buttons. #404040
+*
+* Circle Outlines
+* - Width. 5px
 *************************/
 
 /*************************
@@ -185,6 +189,25 @@ section {
   }
 }
 
+/*************************
+*******Sections******
+**************************/
+
+.lightest-bg {
+  background: #fff;
+}
+
+.light-bg {
+  background: #f2f2f2;
+}
+
+.large-padding-bottom {
+  padding-bottom: 70px;
+}
+
+.medium-padding-bottom {
+  padding-bottom: 40px;
+}
 
 /*************************
 *******Header******
@@ -211,37 +234,6 @@ section {
 
 .top-number p{
   margin: 0
-}
-
-.social{
-  text-align: right;
-}
-
-.social-share{
- display: inline-block;
- list-style: none;
- padding: 0;
- margin: 0;
-}
-
-ul.social-share li {
-  display: inline-block;
-}
-
-ul.social-share li a {
-  display: inline-block;
-  color: #fff;
-  background: #404040;
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
-  text-align: center;
-  border-radius: 2px;
-}
-
-ul.social-share li a:hover {
-  background: #de8033;
-  color: #fff;
 }
 
 .navbar-brand {
@@ -418,24 +410,6 @@ ul.social-share li a:hover {
   animation: fadeInUp 300ms linear 600ms both;
 }
 
-#mission-section {
-  background: #f2f2f2;
-  padding-bottom: 40px;
-}
-
-#committee-section .col-xs-12.col-sm-4.col-md-3{
-  padding: 0;
-}
-
-#committee-section {
-    padding-bottom: 70px;
-}
-
-#team-section {
-  background: #f2f2f2;
-  padding-bottom: 70px;
-}
-
 .circular-icon {
   margin-bottom: 35px;
   overflow: hidden;
@@ -476,14 +450,6 @@ ul.social-share li a:hover {
   box-shadow: inset 0 0 0 5px #de8033;
   -webkit-box-shadow: inset 0 0 0 5px #de8033;
   border: 3px solid #de8033;
-}
-
-#sponsor-aside {
-  background-color: #fff;
-}
-
-#sponsor-aside {
-  text-align: center;
 }
 
 .sponsors ul {

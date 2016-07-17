@@ -17,6 +17,7 @@
           templateUrl: 'views/home.html'
         })
         .when('/officers', {
+          controller: 'OfficerCtrl',
           templateUrl: 'views/officers.html'
         })
         .when('/events', {

@@ -1,0 +1,8 @@
+<div class="nobe-officer-photo">
+    <img ng-src="{{nobeOfficerData.officerImageForRole(role)}}" class="img-responsive img-circle" alt="">
+    <h4 ng-if=" displayNameAndRole">{{nobeOfficerData.officerNameForRole(role)}}</h4>
+    <p ng-if="displayNameAndRole" class="text-muted">{{role}}</p>
+    <ul ng-if="displaySocialMedia" class="list-inline social-buttons">
+        <li><a ng-href="{{nobeOfficerData.officerLinkedInForRole(role)}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+</div>
