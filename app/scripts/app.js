@@ -16,14 +16,14 @@
           controller: 'HomeCtrl',
           templateUrl: 'views/home.html'
         })
-        .when('/about', {
-          templateUrl: 'views/about.html',
-        })
-        .when('/services', {
-          templateUrl: 'views/services.html'
+        .when('/officers', {
+          templateUrl: 'views/officers.html'
         })
         .when('/events', {
           templateUrl: 'views/events.html'
+        })
+        .when('/about', {
+          templateUrl: 'views/about.html',
         })
         .when('/contact', {
           controller: 'ContactCtrl',
