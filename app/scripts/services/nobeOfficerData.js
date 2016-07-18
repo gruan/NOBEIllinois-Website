@@ -71,10 +71,11 @@
     }
 
     function _officerLinkedInForRole(role) {
-      if (_officers[role].linkedin.length > 0)
+      if (_officers[role].linkedin.length > 0) {
         return _officers[role].linkedin;
+      }
 
-      return 'NOBE_ILLINOIS_LINKEDIN';
+      return NOBE_ILLINOIS_LINKEDIN;
     }
 
     // FIXME: Dynamically check if a file exists...

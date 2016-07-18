@@ -23,8 +23,9 @@
         .when('/events', {
           templateUrl: 'views/events.html'
         })
-        .when('/about', {
-          templateUrl: 'views/about.html',
+        .when('/national', {
+          controller: 'NationalCtrl',
+          templateUrl: 'views/national.html'
         })
         .when('/contact', {
           controller: 'ContactCtrl',
