@@ -14,9 +14,8 @@
   angular.module('nobe')
     .directive('nobeNavBar', navBar);
 
-  // navBar.$inject = ['$scope'];
-
-  function navBar() {
+  navBar.$inject = ['$rootScope', 'nobeWindowData', 'WindowEnum'];
+  function navBar($rootScope, nobeWindowData, WindowEnum) {
     var directive;
 
     directive = {
@@ -31,18 +30,15 @@
     return directive;
 
     function link(scope) {
+      $rootScope.$on('$routeChangeSuccess', function() {
+        scope.activePage = nobeWindowData.currentActivePage();
+      });
+
       scope.facebook = 'https://www.facebook.com/groups/nobeillinois/';
       scope.twitter = 'https://twitter.com/nobeillinois?lang=en';
       scope.linkedin = 'https://www.linkedin.com/';
 
-      // FIXME: Defines highlighted tab in the navigation bar
-      scope.activePage = {
-        home      : {active: false},
-        about     : {active: false},
-        services  : {active: false},
-        events    : {active: false},
-        contact   : {active: false}
-      };
+      scope.WindowEnum = WindowEnum;
     }
   }
 })();

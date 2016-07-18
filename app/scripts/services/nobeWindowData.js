@@ -10,10 +10,28 @@
   angular.module('nobe')
     .factory('nobeWindowData', nobeWindowData);
 
-  function nobeWindowData() {
+  angular.module('nobe')
+    .constant('WindowEnum', {
+      Home: 'home',
+      Officers: 'officers',
+      Events: 'events',
+      National: 'national',
+      Contact: 'contact'
+    });
+
+  nobeWindowData.$inject = ['$rootScope', 'WindowEnum'];
+  function nobeWindowData($rootScope, WindowEnum) {
     // Private
     let _isModalOpen = false;
-    let _currentActivePage = 'home';
+    let _currentActivePage = WindowEnum.Home;
+
+    function _onRouteChangeNavBar() {
+      // loadedTemplateUrl has the format views/[page].html
+      $rootScope.$on('$routeChangeSuccess', function(event, next, current) {
+        let page = next.loadedTemplateUrl.split('.')[0].split('/')[1];
+        _currentActivePage = page;
+      });
+    }
 
     // Public
     let nobeWindowDataObj = {
@@ -23,6 +41,7 @@
       setCurrentActivePage: function(newValue) { _currentActivePage = newValue; }
     };
 
+    _onRouteChangeNavBar();
     return nobeWindowDataObj;
   }
 })();

@@ -210,6 +210,14 @@ section {
   padding-bottom: 40px;
 }
 
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
 /*************************
 *******Header******
 **************************/
