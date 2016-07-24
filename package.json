@@ -5,7 +5,14 @@
   "main": "server.js",
   "author": "George Ruan",
   "dependencies": {
+    "angular": "~1.4.12",
     "angular-chart.js": "^1.0.0",
-    "express": "~4.7.2"
+    "angular-route": "~1.4.12",
+    "bootstrap": "^3.3.6",
+    "express": "~4.7.2",
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.1.0",
+    "lodash": "^4.13.1",
+    "wowjs": "^1.1.3"
   }
 }
