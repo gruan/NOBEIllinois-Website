@@ -8,7 +8,7 @@
   'use strict';
 
   angular
-    .module('nobe', ['ngRoute'])  // Set up app dependencies
+    .module('nobe', ['ngRoute', 'chart.js'])  // Set up app dependencies
     .config(function($routeProvider) {
       // Define Routes
       $routeProvider

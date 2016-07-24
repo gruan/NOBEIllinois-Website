@@ -5,6 +5,7 @@
   var fs = require('fs');
 
   app.use(express.static('app'));
+  app.use('/node_modules', express.static(__dirname + '/node_modules/'));
 
   app.get('/', function (req, res) {
     res.sendFile(__dirname + '/app/index.html');

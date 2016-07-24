@@ -134,6 +134,21 @@
         ]
       };
 
+      $scope.compositionSection = {
+        memberData: [3, 1, 2, 5, 3, 2, 2, 1, 8],
+        labels: [
+          'Chemical Engineering',
+          'Civil and Environment Engineering',
+          'Computer Engineering',
+          'Computer Science',
+          'Finance',
+          'General Engineering',
+          'Industrial Engineering',
+          'Materials Science and Engineering',
+          'Mechanical Engineering'
+        ]
+      };
+
       // ==================
       // Functions
       // ==================
