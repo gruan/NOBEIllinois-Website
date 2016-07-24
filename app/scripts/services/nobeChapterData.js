@@ -105,7 +105,7 @@
       }
       chapterLogo += '.png';
 
-      return chapterLogo;
+      return chapterLogo.toLowerCase();
     }
 
     // Public
