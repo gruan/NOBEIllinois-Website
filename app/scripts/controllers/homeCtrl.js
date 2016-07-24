@@ -78,7 +78,7 @@
         {
           name: 'Product Development',
           shortDescription: 'Brainstorm and create.',
-          image: 'images/services/services1.png',
+          image: '/images/services/services1.png',
           imageAlt: '',
           description: 'Use this area to describe your project. Lorem ipsum ' +
                        'dolor sit amet, consectetur adipisicing elit. Est ' +
@@ -90,7 +90,7 @@
         {
           name: 'Case Competition',
           shortDescription: 'Compete in competitions.',
-          image: 'images/services/services1.png',
+          image: '/images/services/services1.png',
           imageAlt: '',
           description: 'Use this area to describe your project. Lorem ipsum ' +
                        'dolor sit amet, consectetur adipisicing elit. Est ' +
