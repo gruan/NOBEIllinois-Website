@@ -1,17 +1,43 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
 
 /*************************
-* Colors:
+* Circle Outlines
+* - Width. 5px
+*************************/
+
+/*************************
+* Colors
+*
+* Buttons:
+* - Dark Buttons. #404040
+*
+* Data Visualization: (From Stephen Few's book Show Me the Numbers)
+* - 4d4d4d (gray)
+* - 5da5da (blue)
+* - faa43a (orange)
+* - 60bd68 (green)
+* - f17cb0 (pink)
+* - b2912f (brown)
+* - b276B2 (purple)
+* - decf3f (yellow)
+* - f15854 (red)
+*
+* Sections:
 * - Darkest. #151515
 * - Dark. #191919
 * - Light. #f2f2f2
 * - Lightest. #fff
-* - NOBE Orange. #de8033
-* - Dark Buttons. #404040
-* - Text. #4e4e4e
 *
-* Circle Outlines
-* - Width. 5px
+* Text:
+* - Normal #4e4e4e
+*
+* Themes:
+* - NOBE Orange. #de8033
+*************************/
+
+/*************************
+* Font:
+* - Font-family: 'Open Sans', sans-serif
 *************************/
 
 /*************************

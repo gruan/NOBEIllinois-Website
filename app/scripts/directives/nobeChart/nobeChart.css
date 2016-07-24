@@ -1,0 +1,9 @@
+/**
+ * Created by George Ruan on July 23, 2016.
+ */
+
+.chart-container {
+  margin: 0 auto;
+  max-height: 500px;
+  max-width: 900px;
+}

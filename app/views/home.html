@@ -8,8 +8,8 @@
                         <div class="row landing-page-header">
                             <div class="col-sm-12">
                                 <div class="carousel-content">
-                                    <h1 class="animation animated-item-1">{{landingPageSection.title}}</h1>
-                                    <h2 class="animation animated-item-2">{{landingPageSection.description}}<h2>
+                                    <h1 class="animation animated-item-1">National Organization of Business and Engineering</h1>
+                                    <h2 class="animation animated-item-2">Illinois Chapter<h2>
                                 </div>
                             </div>
                         </div>
@@ -23,8 +23,16 @@
     <section id="mission-section" class="light-bg medium-padding-bottom">
         <div class="container">
             <div class="center wow fadeInDown">
-                <h2>{{missionSection.title}}</h2>
-                <p class="lead">{{missionSection.statement}}</p>
+                <h2>Mission</h2>
+                <p class="lead">Our mission is to bring together individuals at
+                  corporate and academic institutions interested in both business
+                  and engineering and to integrate these fields into one practice.
+                  NOBE will serve as a crossroad and network for the unmet
+                  professional, leadership, technological and entrepreneurial
+                  development of these individuals. As a national organization,
+                  NOBE will maintain this network and continually build resources
+                  to help these individuals meet the constantly evolving demands
+                  they will face in today’s business world.</p>
             </div>
         </div>
     </section>
@@ -32,12 +40,13 @@
     <section id="committee-section" class="lightest-bg large-padding-bottom">
         <div class="container">
             <div class="center wow fadeInDown">
-                <h2>{{committeeSection.title}}</h2>
-                <p class="lead">{{committeeSection.description}}</p>
+                <h2>Committees</h2>
+                <p class="lead">Join a variety of committees that promote direct
+                  member involvement with the organization and local community.</p>
             </div>
 
             <div class="row">
-                <div ng-repeat="committee in committeeSection.committees">
+                <div ng-repeat="committee in committees">
                     <div ng-class="getCommitteeContainerClass($last, $even)">
                         <div class="circular-icon">
                             <i ng-class="committee.iconClass"></i>
@@ -53,12 +62,13 @@
     <section id="team-section" class="light-bg large-padding-bottom">
         <div class="container">
             <div class="center wow fadeInDown">
-                <h2>{{teamSection.title}}</h2>
-                <p class="lead">{{teamSection.description}}</p>
+                <h2>Teams</h2>
+                <p class="lead">Develop skills and connections with other NOBE
+                  members by getting involved on teams.</p>
             </div>
 
             <div class="row">
-                <div ng-repeat="team in teamSection.teams">
+                <div ng-repeat="team in teams">
                     <div class="col-sm-6 col-md-4" ng-class="getTeamContainerClass($last, $odd)">
                         <nobe-project-modal team="team">
                         </nobe-project-modal>
@@ -71,11 +81,11 @@
     <aside id="sponsor-aside" class="lightest-bg text-center">
         <div class="container">
             <div class="center wow fadeInDown">
-                <h2>{{sponsorAside.title}}</h2>
+                <h2>Sponsors</h2>
             </div>
 
             <div class="row">
-                <div ng-repeat="sponsor in sponsorAside.sponsors">
+                <div ng-repeat="sponsor in sponsors">
                     <div class="col-xs-6 col-md-4 col-xs-offset-3 col-md-offset-4">
                         <img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="{{getSponsorAnimationDelay($index)}}" ng-src="images/partners/{{sponsor}}_logo.png">
                     </div>
@@ -90,9 +100,7 @@
                 <h2>Member Composition</h2>
             </div>
 
-            <canvas class="chart chart-pie"
-                chart-data="compositionSection.memberData" chart-labels="compositionSection.labels" chart-options="options">
-            </canvas>
+            <nobe-chart data="memberData" labels="labels" options="chartOptions" type="'chart-pie'"></nobe-chart>
         </div>
     </section>
 
