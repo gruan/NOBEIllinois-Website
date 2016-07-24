@@ -5,7 +5,12 @@
   var fs = require('fs');
 
   app.use(express.static('app'));
-  app.use('/node_modules', express.static(__dirname + '/node_modules/'));
+
+  // ===================
+  // Node_Modules Routes
+  // ===================
+  app.use('/angular-chart', express.static(__dirname + '/node_modules/angular-chart.js/dist'));
+  app.use('/chart', express.static(__dirname + '/node_modules/chart.js/dist'));
 
   app.get('/', function (req, res) {
     res.sendFile(__dirname + '/app/index.html');
