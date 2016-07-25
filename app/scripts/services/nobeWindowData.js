@@ -22,22 +22,23 @@
   nobeWindowData.$inject = ['$rootScope', 'WindowEnum'];
   function nobeWindowData($rootScope, WindowEnum) {
     // Private
-    let _isModalOpen = false;
-    let _currentActivePage = WindowEnum.Home;
+    var _isModalOpen = false;
+    var _currentActivePage = WindowEnum.Home;
 
     function _onRouteChangeNavBar() {
       // loadedTemplateUrl has the format views/[page].html
-      $rootScope.$on('$routeChangeSuccess', function(event, next, current) {
-        if (!next.loadedTemplateUrl)
+      $rootScope.$on('$routeChangeSuccess', function(event, next) {
+        if (!next.loadedTemplateUrl) {
           return;
+        }
 
-        let page = next.loadedTemplateUrl.split('.')[0].split('/')[1];
+        var page = next.loadedTemplateUrl.split('.')[0].split('/')[1];
         _currentActivePage = page;
       });
     }
 
     // Public
-    let nobeWindowDataObj = {
+    var nobeWindowDataObj = {
       isModalOpen: function() { return _isModalOpen; },
       setIsModalOpen: function(newValue) { _isModalOpen = newValue; },
       currentActivePage: function() { return _currentActivePage; },

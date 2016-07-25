@@ -39,7 +39,7 @@
         });
     })
     .run([function() {
-      let wow = new WOW({live : true});
+      var wow = new WOW({live : true});
       wow.init();
     }]);
 })();

@@ -156,7 +156,7 @@
       }
 
       function getTeamContainerClass(isLastElement, isIndexOdd) {
-        let parity = $scope.teams.length % 3;
+        var parity = $scope.teams.length % 3;
 
         switch (parity) {
         case 0:
@@ -178,7 +178,7 @@
       }
 
       function getSponsorAnimationDelay(index) {
-        let delay = `${300 * (index + 1)}ms`;
+        var delay = `${300 * (index + 1)}ms`;
         return delay;
       }
 

@@ -11,11 +11,11 @@
 
   function nobeOfficerData() {
     // Constants
-    const FALLBACK_IMAGE = '/images/NOBE_Icon.png';
-    const NOBE_ILLINOIS_LINKEDIN = 'https://www.linkedin.com/groups/8529699/profile';
+    var FALLBACK_IMAGE = '/images/NOBE_Icon.png';
+    var NOBE_ILLINOIS_LINKEDIN = 'https://www.linkedin.com/groups/8529699/profile';
 
     // Private
-    const _officers = {
+    var _officers = {
       'President': {
         name: 'Curt Olbrich',
         linkedin: 'https://www.linkedin.com/in/curtis-olbrich-348556b0'
@@ -80,17 +80,17 @@
 
     // FIXME: Dynamically check if a file exists...
     function _officerImageForRole(role) {
-      let name;
+      var name;
       if (!role || !(name = _officers[role].name) || name === 'Open Position') {
         return FALLBACK_IMAGE;
       }
 
-      let arrayOfNames = name.toLowerCase().split(' ');
+      var arrayOfNames = name.toLowerCase().split(' ');
       return `/images/officers/${arrayOfNames[0]}_${arrayOfNames[1]}.jpg`;
     }
 
     // Public
-    let nobeOfficerDataObj = {
+    var nobeOfficerDataObj = {
       officerNameForRole: _officerNameForRole,
       officerLinkedInForRole: _officerLinkedInForRole,
       officerImageForRole: _officerImageForRole

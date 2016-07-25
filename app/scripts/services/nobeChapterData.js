@@ -26,7 +26,7 @@
     .factory('nobeChapterData', nobeChapterData);
 
   function nobeChapterData() {
-    let _chapters = {
+    var _chapters = {
       'National': {
         chapter: 'National',
         color: '#a8cb54',
@@ -98,9 +98,9 @@
         return '/images/chapter_logos/national.png';
       }
 
-      let arrayOfStrings = chapter.split(/[\ -]/);
-      let chapterLogo = `/images/chapter_logos/${arrayOfStrings[0]}`;
-      for (let i = 1; i < arrayOfStrings.length; ++i) {
+      var arrayOfStrings = chapter.split(/[\ -]/);
+      var chapterLogo = `/images/chapter_logos/${arrayOfStrings[0]}`;
+      for (var i = 1; i < arrayOfStrings.length; ++i) {
         chapterLogo += `_${arrayOfStrings[i]}`;
       }
       chapterLogo += '.png';
@@ -109,7 +109,7 @@
     }
 
     // Public
-    let nobeChapterDataObj = {
+    var nobeChapterDataObj = {
       arrayOfChapters: _arrayOfChapters,
       chapterLogo: _chapterLogo
     };

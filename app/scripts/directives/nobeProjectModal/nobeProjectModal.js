@@ -28,7 +28,7 @@
     return directive;
 
     function link(scope) {
-      let isCurrentModalOpen = false;
+      var isCurrentModalOpen = false;
 
       function isModalOpen() {
         return isCurrentModalOpen;

@@ -30,7 +30,7 @@
   }
 
   function link(scope) {
-    const LIGHT_COLOR = '#f2f2f2';
+    var LIGHT_COLOR = '#f2f2f2';
 
     function _changeToChapterBorderColor() {
       _setBorderColor(scope.color);
