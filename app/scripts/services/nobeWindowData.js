@@ -28,6 +28,9 @@
     function _onRouteChangeNavBar() {
       // loadedTemplateUrl has the format views/[page].html
       $rootScope.$on('$routeChangeSuccess', function(event, next, current) {
+        if (!next.loadedTemplateUrl)
+          return;
+
         let page = next.loadedTemplateUrl.split('.')[0].split('/')[1];
         _currentActivePage = page;
       });
