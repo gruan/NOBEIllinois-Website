@@ -8,26 +8,18 @@
   angular.module('nobe')
     .controller('OfficerCtrl', officerCtrl);
 
-  officerCtrl.$inject = ['$scope'];
+  officerCtrl.$inject = ['$scope', 'nobeOfficerData'];
 
-  function officerCtrl($scope) {
-    // ==================
-    // Text
-    // ==================
-    $scope.roles = [
-      'President',
-      'External Chair',
-      'Internal Chair',
-      'Tech Chair',
-      'Finance Chair',
-      'Social Chair',
-      'Fundraising Chair',
-      'Career Development Chair',
-      'Case Competition Chair',
-      'Marketing Chair',
-      'Outreach Chair',
-      'Junior Board'
-    ];
+  function officerCtrl($scope, nobeOfficerData) {
+    $scope.roles = nobeOfficerData.getActiveRoles();
+    $scope.getOfficerContainerClass = getOfficerContainerClass;
+
+    function getOfficerContainerClass (isLastElement, isIndexEven) {
+        if (isLastElement && isIndexEven) {
+          return 'col-xs-offset-0 col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-0 col-md-4';
+        }
+
+        return 'col-xs-12 col-sm-6 col-md-4';
+    }
   }
-
 })();

@@ -18,51 +18,58 @@
     var _officers = {
       'President': {
         name: 'Curt Olbrich',
-        linkedin: 'https://www.linkedin.com/in/curtis-olbrich-348556b0'
+        linkedin: 'https://www.linkedin.com/in/curtis-olbrich-348556b0',
+        active: true
       },
       'External Chair': {
         name: 'Veronika Sowers',
-        linkedin: 'https://www.linkedin.com/in/veronika-sowers-b1a4949a'
+        linkedin: 'https://www.linkedin.com/in/veronika-sowers-b1a4949a',
+        active: true
       },
       'Internal Chair': {
         name: 'Owen Flasch',
-        linkedin: 'https://www.linkedin.com/in/owen-flasch-437066115'
+        linkedin: 'https://www.linkedin.com/in/owen-flasch-437066115',
+        active: true
       },
       'Tech Chair': {
         name: 'George Ruan',
-        linkedin: 'https://www.linkedin.com/in/gruan'
+        linkedin: 'https://www.linkedin.com/in/gruan',
+        active: true
       },
       'Finance Chair': {
-        name: 'Open Position',
-        linkedin: ''
+        name: 'Mrinaal Mittal',
+        linkedin: 'https://in.linkedin.com/in/mrinaalmittal',
+        active: true
       },
       'Social Chair': {
         name: 'June Qian',
-        linkedin: 'https://www.linkedin.com/in/june-qian-24125b108'
+        linkedin: 'https://www.linkedin.com/in/june-qian-24125b108',
+        active: true
       },
       'Fundraising Chair': {
         name: 'Rachel Lohmeyer',
-        linkedin: 'https://www.linkedin.com/in/rachel-lohmeyer-609132a3'
+        linkedin: 'https://www.linkedin.com/in/rachel-lohmeyer-609132a3',
+        active: true
       },
       'Career Development Chair': {
         name: 'Open Position',
-        linkedin: ''
+        linkedin: '',
+        active: false
       },
       'Case Competition Chair': {
         name: 'Sanjit Narendra',
-        linkedin: 'https://www.linkedin.com/in/sanjit-narendra-144918b2'
-      },
-      'Marketing Chair': {
-        name: 'Open Position',
-        linkedin: ''
+        linkedin: 'https://www.linkedin.com/in/sanjit-narendra-144918b2',
+        active: true
       },
       'Outreach Chair': {
         name: 'Saksham Dhingra',
-        linkedin: 'https://www.linkedin.com/in/saksham-dhingra-179b87a8'
+        linkedin: 'https://www.linkedin.com/in/saksham-dhingra-179b87a8',
+        active: true
       },
       'Junior Board': {
         name: 'Open Position',
-        linkedin: ''
+        linkedin: '',
+        active: false
       }
     };
 
@@ -78,7 +85,7 @@
       return NOBE_ILLINOIS_LINKEDIN;
     }
 
-    // FIXME: Dynamically check if a file exists...
+    // FIXME: Dynamically check if an image exists...
     function _officerImageForRole(role) {
       var name;
       if (!role || !(name = _officers[role].name) || name === 'Open Position') {
@@ -89,11 +96,24 @@
       return `/images/officers/${arrayOfNames[0]}_${arrayOfNames[1]}.jpg`;
     }
 
+    // FIXME: fix dis.
+    function _getActiveRoles() {
+      var activeRoles = [];
+      var properties = Object.getOwnPropertyNames(_officers);
+      for (var i = 0; i < properties.length; ++i) {
+        if (_officers.hasOwnProperty(properties[i]) && _officers[properties[i]].active) {
+          activeRoles.push(properties[i]);
+        }
+      }
+      return activeRoles;
+    }
+
     // Public
     var nobeOfficerDataObj = {
       officerNameForRole: _officerNameForRole,
       officerLinkedInForRole: _officerLinkedInForRole,
-      officerImageForRole: _officerImageForRole
+      officerImageForRole: _officerImageForRole,
+      getActiveRoles: _getActiveRoles
     };
 
     return nobeOfficerDataObj;
