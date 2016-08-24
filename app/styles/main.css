@@ -383,10 +383,23 @@ section {
 
 #landing-page-section {
   position: relative;
+  background-image: url(../images/background_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 730px;
 }
 
-#landing-page-section .landing-page-background {
-  background-image: url(../images/background_image.jpg);
+#landing-page-section .landing-page-header {
+  margin-top: 150px;
+}
+
+#landing-page-section h1 {
+  font-size: 3em;
+}
+
+#landing-page-section h2 {
+  font-size: 2.5em;
+  color: #fff;
 }
 
 .no-margin {
@@ -403,33 +416,7 @@ section {
   text-align: center;
 }
 
-#landing-page-section .carousel h1 {
-  font-size: 3em;
-}
-
-#landing-page-section .carousel h2 {
-  font-size: 2.5em;
-  color: #fff;
-}
-
-#landing-page-section .carousel .item {
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  left: 0 !important;
-  top: 0;
-  position: absolute;
-  width: 100%;
-  display: block !important;
-  height: 730px;
-}
-
-#landing-page-section .carousel .item:first-child {
-  top: auto;
-  position: relative;
-}
-
-#landing-page-section .active .animation.animated-item-1 {
+#landing-page-section .animation.animated-item-1 {
   -webkit-animation: fadeInUp 300ms linear 300ms both;
   -moz-animation: fadeInUp 300ms linear 300ms both;
   -o-animation: fadeInUp 300ms linear 300ms both;
@@ -437,7 +424,7 @@ section {
   animation: fadeInUp 300ms linear 300ms both;
 }
 
-#landing-page-section .active .animation.animated-item-2 {
+#landing-page-section .animation.animated-item-2 {
   -webkit-animation: fadeInUp 300ms linear 600ms both;
   -moz-animation: fadeInUp 300ms linear 600ms both;
   -o-animation: fadeInUp 300ms linear 600ms both;
@@ -458,7 +445,7 @@ section {
   margin-right: 25px;
 }
 
-.circular-icon i{
+.circular-icon i {
   font-size: 48px;
   height: 110px;
   width: 110px;
