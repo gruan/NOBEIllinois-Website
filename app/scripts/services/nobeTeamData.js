@@ -16,24 +16,14 @@
         shortDescription: 'Brainstorm and create.',
         image: '/images/services/services1.png',
         imageAlt: 'Product Development Photo',
-        description: 'Use this area to describe your project. Lorem ipsum ' +
-                     'dolor sit amet, consectetur adipisicing elit. Est ' +
-                     'blanditiis dolorem culpa incidunt minus dignissimos ' +
-                     'deserunt repellat aperiam quasi sunt officia expedita ' +
-                     'beatae cupiditate, maiores repudiandae, nostrum, ' +
-                     'reiciendis facere nemo!'
+        description: 'Have an interesting idea that you would like to implement or just want to create a product? Join the Product Development team to connect with likeminded individuals! As a member, you will have the form groups and implement a NOBE member\’s product idea. A NOBE officer will guide you through the process of creating a product from scratch to the finished project. Not only will NOBE provide the resources to help you get off the ground, but companies from research park will be invited to give critique and potentially sponsor you.'
       },
       {
         name: 'Case Competition',
         shortDescription: 'Compete in competitions.',
         image: '/images/services/services1.png',
         imageAlt: 'Case Competition Photo',
-        description: 'Use this area to describe your project. Lorem ipsum ' +
-                     'dolor sit amet, consectetur adipisicing elit. Est ' +
-                     'blanditiis dolorem culpa incidunt minus dignissimos ' +
-                     'deserunt repellat aperiam quasi sunt officia expedita ' +
-                     'beatae cupiditate, maiores repudiandae, nostrum, ' +
-                     'reiciendis facere nemo!'
+        description: 'Connect with fellow members by joining NOBE\'s Case Competition team. As a member, you will engage with other students to train and improve your consulting and case competition skills. You will also have a chance to interact with consulting companies on an individual level, as they will be invited to provide tips and pointers. Equipped with newfound knowledge, represent NOBE by participating in case competitions at UIUC and other campuses across the region.'
       }
     ];
 
