@@ -56,7 +56,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+button {
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
   color:#4e4e4e;
@@ -83,7 +84,7 @@ h4 {
 }
 
 a {
-  color: #de8033;
+  color: #4e4e4e;
   -webkit-transition: color 300ms, background-color 300ms;
   -moz-transition: color 300ms, background-color 300ms;
   -o-transition:  color 300ms, background-color 300ms;
@@ -92,6 +93,8 @@ a {
 
 a:hover, a:focus {
   color: #d43133;
+  text-decoration: none;
+  outline: none;
 }
 
 hr {
@@ -107,12 +110,17 @@ hr {
   border-radius: 4px;
   border:none;
   margin-top: 10px;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 
 .btn-primary:hover,
-.btn-primary:focus{
-  background: #de8033;
+.btn-primary:focus,
+.btn-primary:active {
+  background: #224E73;
   outline: none;
   box-shadow: none;
 }
@@ -125,13 +133,6 @@ hr {
 
 .btn-transparent:hover {
   border-color: rgba(255, 255, 255, 0.5);
-}
-
-a:hover,
-a:focus {
-  color: #111;
-  text-decoration: none;
-  outline: none;
 }
 
 .dropdown-menu {
