@@ -5,16 +5,21 @@
   max-width: 200px;
 }
 
+.nobe-officer-photo img {
+  border: 5px solid #f2f2f2;
+  margin: 0 auto;
+  min-height: 200px;
+}
+
 @media(max-width:768px) {
   .nobe-officer-photo {
     max-width: 300px;
   }
+  .nobe-officer-photo img {
+    min-height: 300px;
+  }
 }
 
-.nobe-officer-photo img {
-  margin: 0 auto;
-  border: 5px solid #f2f2f2;
-}
 .nobe-officer-photo h4 {
   margin-top: 25px;
   margin-bottom: 0;
