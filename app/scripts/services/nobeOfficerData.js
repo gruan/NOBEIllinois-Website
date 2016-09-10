@@ -67,9 +67,9 @@
         active: true
       },
       'Junior Board': {
-        name: 'Open Position',
-        linkedin: '',
-        active: false
+        name: 'Jackie Chen',
+        linkedin: 'https://www.linkedin.com/in/jackiebchen',
+        active: true
       }
     };
 

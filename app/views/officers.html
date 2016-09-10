@@ -8,7 +8,7 @@
 
             <div class="row">
                 <div ng-repeat="role in roles">
-                    <div ng-class="getOfficerContainerClass($last, $even)">
+                    <div ng-class="getOfficerContainerClass($last, $index)">
                         <nobe-officer-photo role="role" display-social-media="true" display-name-and-role="true"></nobe-officer-photo>
                     </div>
                 </div>
