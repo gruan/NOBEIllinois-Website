@@ -15,6 +15,7 @@
       Home: 'home',
       Officers: 'officers',
       Events: 'events',
+      Points: 'points',
       National: 'national',
       Contact: 'contact'
     });

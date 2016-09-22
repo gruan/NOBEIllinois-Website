@@ -23,6 +23,9 @@
         .when('/events', {
           templateUrl: 'views/events.html'
         })
+        .when('/points', {
+          templateUrl: 'views/points.html'
+        })
         .when('/national', {
           controller: 'NationalCtrl',
           templateUrl: 'views/national.html'
