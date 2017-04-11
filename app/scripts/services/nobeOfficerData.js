@@ -64,6 +64,16 @@
       'Case Competition Chair\n': {
         name: 'Sanjit Narendra',
         linkedin: 'https://www.linkedin.com/in/sanjit-narendra-144918b2',
+        active: false
+      },
+      'Product Development Co-chair': {
+        name: 'Rachel Burroughs',
+        linkedin: 'https://www.linkedin.com/in/rachel-burroughs-3b4459103/',
+        active: true
+      },
+      'Product Development Co-chair ': {
+        name: 'Noah Horton',
+        linkedin: 'https://www.linkedin.com/in/noah-horton-115a39126',
         active: true
       },
       'Junior Board': {
@@ -74,16 +84,6 @@
       'Junior Board ': {
         name: 'Matthew Lee',
         linkedin: 'https://www.linkedin.com/in/matthew-lee-aa629b127',
-        active: true
-      },
-      'Product Development Co-chair': {
-        name: 'Rachel Burroughs',
-        linkedin: 'https://www.linkedin.com/in/rachel-burroughs-3b4459103/',
-        active: true
-      },
-      'Product Development Co-chair ': {
-        name: 'Noah Horton',
-        linkedin: 'https://www.linkedin.com/in/noah-horton-115a39126',
         active: true
       },
       'Test Officer': {
