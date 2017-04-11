@@ -17,59 +17,79 @@
     // Private
     var _officers = {
       'President': {
-        name: 'Curt Olbrich',
-        linkedin: 'https://www.linkedin.com/in/curtis-olbrich-348556b0',
-        active: true
-      },
-      'External Chair': {
-        name: 'Veronika Sowers',
-        linkedin: 'https://www.linkedin.com/in/veronika-sowers-b1a4949a',
-        active: true
-      },
-      'Internal Chair': {
         name: 'Owen Flasch',
-        linkedin: 'https://www.linkedin.com/in/owen-flasch-437066115',
+        linkedin: 'https://www.linkedin.com/in/owen-flasch-437066115/',
         active: true
       },
-      'Tech Chair': {
-        name: 'George Ruan',
-        linkedin: 'https://www.linkedin.com/in/gruan',
+      'VP External': {
+        name: 'Sanjit Narendra',
+        linkedin: 'https://www.linkedin.com/in/sanjit-narendra-144918b2/',
         active: true
       },
-      'Finance Chair': {
-        name: 'Mrinaal Mittal',
-        linkedin: 'https://in.linkedin.com/in/mrinaalmittal',
-        active: true
-      },
-      'Social Chair': {
+      'VP Internal': {
         name: 'June Qian',
         linkedin: 'https://www.linkedin.com/in/june-qian-24125b108',
         active: true
       },
-      'Fundraising Chair': {
+      'VP Special Operations': {
+        name: 'Mrinaal Mittal',
+        linkedin: 'https://www.linkedin.com/in/mrinaalmittal/',
+        active: true
+      },
+      'Tech Chair': {
+        name: 'Arsh Khandelwal',
+        linkedin: 'https://www.linkedin.com/in/arshkhandelwal/',
+        active: true
+      },
+      'Treasurer': {
         name: 'Rachel Lohmeyer',
         linkedin: 'https://www.linkedin.com/in/rachel-lohmeyer-609132a3',
         active: true
       },
-      'Career Development Chair': {
-        name: 'Open Position',
-        linkedin: '',
-        active: false
+      'Marketing Chair': {
+        name: 'Shrey Maheshwari',
+        linkedin: 'https://www.linkedin.com/in/shrey-maheshwari-b9aa44132/',
+        active: true
       },
-      'Case Competition Chair': {
+      'Finance Chair': {
+        name: 'Anumay Mishra',
+        linkedin: 'https://www.linkedin.com/in/anumay-mishra-40485b135/',
+        active: true
+      },
+      'Social Chair': {
+        name: 'Grant Culp',
+        linkedin: 'https://www.linkedin.com/in/grantculp/',
+        active: true
+      },
+      'Case Competition Chair\n': {
         name: 'Sanjit Narendra',
         linkedin: 'https://www.linkedin.com/in/sanjit-narendra-144918b2',
         active: true
       },
-      'Outreach Chair': {
-        name: 'Saksham Dhingra',
-        linkedin: 'https://www.linkedin.com/in/saksham-dhingra-179b87a8',
+      'Junior Board': {
+        name: 'Nikita Mandhan',
+        linkedin: 'https://www.linkedin.com/in/nikita-mandhan-a9666112a',
         active: true
       },
-      'Junior Board': {
-        name: 'Jackie Chen',
-        linkedin: 'https://www.linkedin.com/in/jackiebchen',
+      'Junior Board ': {
+        name: 'Matthew Lee',
+        linkedin: 'https://www.linkedin.com/in/matthew-lee-aa629b127',
         active: true
+      },
+      'Product Development Co-chair': {
+        name: 'Rachel Burroughs',
+        linkedin: 'https://www.linkedin.com/in/rachel-burroughs-3b4459103/',
+        active: true
+      },
+      'Product Development Co-chair ': {
+        name: 'Noah Horton',
+        linkedin: 'https://www.linkedin.com/in/noah-horton-115a39126',
+        active: true
+      },
+      'Test Officer': {
+        name: 'Test User',
+        linkedin: 'https://google.com',
+        active: false
       }
     };
 

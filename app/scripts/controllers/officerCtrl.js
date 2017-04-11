@@ -33,7 +33,7 @@
       if (isLastElement && remainder == 0) {
         containerClass = containerClass.concat(' col-md-offset-4');
       } else if (isLastElement && remainder == 1) {
-        containerClass = containerClass.concat(' col-md-offset-2');
+        containerClass = containerClass.concat(' col-md-offset-4');
       } else {
         containerClass = containerClass.concat(' col-md-offset-0');
       }
