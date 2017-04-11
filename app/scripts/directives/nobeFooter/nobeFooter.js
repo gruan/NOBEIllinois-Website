@@ -32,6 +32,6 @@
   }
 
   function link(scope) {
-    scope.copyrightYear = '2016';
+    scope.copyrightYear = '2017';
   }
 })();
