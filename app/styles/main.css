@@ -164,7 +164,7 @@ aside .center {
 
 section {
   padding-top: 70px;
-  padding-bottom: 200px;
+  padding-bottom: 240px;
 }
 
 .center {
@@ -562,7 +562,7 @@ section {
 #footer {
   background: #151515;
   color: #fff;
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
   padding-top: 30px;
