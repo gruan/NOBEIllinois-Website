@@ -163,12 +163,13 @@ aside .center {
 }
 
 section {
-  padding: 70px 0;
+  padding-top: 70px;
+  padding-bottom: 200px;
 }
 
 .center {
   text-align: center;
-  padding-bottom: 55px;
+  padding-bottom: 5px;
 }
 
 .scaleIn {
@@ -561,10 +562,12 @@ section {
 #footer {
   background: #151515;
   color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
-  position: relative;
-  bottom:0;
+
 }
 
 #footer a {

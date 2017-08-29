@@ -16,15 +16,37 @@
         shortDescription: 'Brainstorm and create.',
         image: '/images/services/services1.png',
         imageAlt: 'Product Development Photo',
-        description: 'Have an interesting idea that you would like to implement or just want to create a product? Join the Product Development team to connect with likeminded individuals! As a member, you will have the form groups and implement a NOBE member\’s product idea. A NOBE officer will guide you through the process of creating a product from scratch to the finished project. Not only will NOBE provide the resources to help you get off the ground, but companies from research park will be invited to give critique and potentially sponsor you.'
+        description: 'Work with the team to develop a product from start to finish through the semester while learning about design stages and marketing and commercialization strategies. Build skills in design thinking and innovation, while simultaneously improving your leadership and communication.'
       },
       {
-        name: 'Case Competition',
+        name: 'Business/Case Analysis Team',
         shortDescription: 'Compete in competitions.',
         image: '/images/services/services1.png',
         imageAlt: 'Case Competition Photo',
-        description: 'Connect with fellow members by joining NOBE\'s Case Competition team. As a member, you will engage with other students to train and improve your consulting and case competition skills. You will also have a chance to interact with consulting companies on an individual level, as they will be invited to provide tips and pointers. Equipped with newfound knowledge, represent NOBE by participating in case competitions at UIUC and other campuses across the region.'
+        description: ' Come together in discussion of topics like corporate development, management and technology consulting, venture capital, and industry management. Gain experience tackling real-world problems through case chains, and have a chance to contribute to NOBE\'s own case competition.'
+      },
+      {
+        name: 'Company Consulting Teams',
+        shortDescription: 'Compete in competitions.',
+        image: '/images/services/services1.png',
+        imageAlt: 'Case Competition Photo',
+        description: 'Join a team to tackle a problem presented by a company from research park over a period of 1-2 months. Work with members of different disciplines to propose a holistic solution to a real-world situation. Gain access to industry leaders and build your network.'
+      },
+      {
+        name: 'Tech Team',
+        shortDescription: 'Compete in competitions.',
+        image: '/images/services/services1.png',
+        imageAlt: 'Case Competition Photo',
+        description: 'Work with the tech chair to build NOBE\'s technology infrastructure. Also, develop and apply skills in various projects throughout the semester.'
+      },
+      {
+        name: 'Social and Marketing Team',
+        shortDescription: 'Compete in competitions.',
+        image: '/images/services/services1.png',
+        imageAlt: 'Case Competition Photo',
+        description: 'Work with the social and marketing chairs to build our brand and grow NOBE\'s presence on campus through publicity and outreach.'
       }
+
     ];
 
 
